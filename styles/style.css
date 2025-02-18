@@ -97,7 +97,6 @@ ol {
 .content__list {
   display: grid;
   gap: 30px;
-  margin-bottom: 30px;
 }
 
 .content__video-card {
@@ -238,7 +237,7 @@ ol {
 }
 
 .more-button {
-  margin: 2px;
+  margin: 30px 2px 2px;
   width:390px;
   height:34px;
 } 
@@ -267,10 +266,7 @@ ol {
   outline: none;
 }
 
-.button:active:active {
-  text-decoration: none;
-}
-
+.button:active:active,
 .content__card-link:active {
   background-color: #545050;
   text-decoration: none;
@@ -289,13 +285,14 @@ ol {
   cursor: text;
 }
 
-.button:hover, 
+.button:hover,
+.search-form__label-text:hover,
 .content__card-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.search-form__label:hover .search-form__label-text { 
+.search-form__label:hover { 
   text-decoration: none;
   cursor: pointer;
 }
