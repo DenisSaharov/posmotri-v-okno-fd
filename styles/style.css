@@ -39,7 +39,7 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
-/*мой код спасибо за проверку)*/
+/*мой код - 2 попытка рекомендации выполнены, спасибо за проверку)*/
 
 .page {
   display: flex;
@@ -61,6 +61,7 @@ ol {
   gap: 30px;
   grid-template-columns: 711px 399px;
 }
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -82,8 +83,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  height: 386px;
-  width: 711px;
+  inline-size: 711px;
+  block-size: 386px;
   margin-bottom: 16px;
 }
 
@@ -160,6 +161,11 @@ ol {
 }
 
 .content__video-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden; 
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -201,7 +207,7 @@ ol {
   border: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
-  color: rgb(255 255 255 / 0.7);
+  color: white;
   font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -283,11 +289,14 @@ ol {
   cursor: text;
 }
 
-.search-form__label:hover,
 .button:hover, 
-.search-form__label-text,
 .content__card-link:hover {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.search-form__label:hover .search-form__label-text { 
+  text-decoration: none;
   cursor: pointer;
 }
 
