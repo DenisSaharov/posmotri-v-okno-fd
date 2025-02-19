@@ -39,7 +39,7 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
-/*мой код - Все рекомендации выполнены,еще раз спасибо за проверку)*/
+/*мой код - ошибка исправлена(надеюсь последняя),еще раз спасибо за проверку!!!!!)*/
 
 .page {
   display: flex;
@@ -285,16 +285,15 @@ ol {
   cursor: text;
 }
 
-.button:hover,
-.search-form__label-text:hover,
-.content__card-link:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
 
-.search-form__label:hover { 
-  text-decoration: none;
-  cursor: pointer;
+.button:hover, 
+.content__card-link:hover { 
+  text-decoration: underline; 
+  cursor: pointer; 
+} 
+ 
+.search-form__label:hover .search-form__label-text {  
+  text-decoration: underline;
 }
 
 .search-form__textfield:active {
